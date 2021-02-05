@@ -11,4 +11,9 @@
 
     <color name="colorAdminStart">#be296b</color>
     <color name="colorAdminEnd">#9c3e9c</color>
+
+    <color name="colorLightGreyLine">#ededed</color>
+    <color name="colorDarkGrey">#9c3e9c</color>
+
+
 </resources>
