@@ -20,6 +20,7 @@
         <activity android:name=".registrar_alumno" />
         <activity android:name=".alumno_home" />
         <activity android:name=".login_profesor" />
+        <activity android:name=".profesor_home" />
     </application>
 
 </manifest>

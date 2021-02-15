@@ -32,14 +32,14 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circulobackground3"
-                    android:src="@drawable/ic_baseline_schedule_24"
+                    android:src="@drawable/ic_baseline_notifications_none_24"
                     android:padding="10dp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:layout_marginTop="10dp"
-                    android:text="Horarios"/>
+                    android:text="Buzón"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -49,7 +49,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Consulta disponibilidad"
+                    android:text="Acepta o rechaza solicitudes"
                     android:padding="5dp"
                     android:textColor="@color/cardview_dark_background"
                     />
@@ -73,14 +73,14 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circulobackground3"
-                    android:src="@drawable/ic_baseline_calendar_today_24"
+                    android:src="@drawable/ic_baseline_report_24"
                     android:padding="10dp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:layout_marginTop="10dp"
-                    android:text="Agendar"/>
+                    android:text="Bitacora"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -90,7 +90,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Programa tu visita"
+                    android:text="Genera reportes"
                     android:padding="5dp"
                     android:textColor="@color/cardview_dark_background"
                     />
@@ -99,99 +99,99 @@
 
         </android.support.v7.widget.CardView>
     </LinearLayout>
-<!--
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:clipToPadding="false"
-        android:orientation="horizontal"
-        >
-        <android.support.v7.widget.CardView
-            android:foreground="?android:attr/selectableItemBackground"
-            android:clickable="true"
-            android:layout_width="160dp"
-            android:layout_height="190dp"
-            android:layout_margin="10dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center"
-                >
-                <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:background="@drawable/circulobackground3"
-                    android:src="@drawable/ic_baseline_schedule_24"
-                    android:padding="10dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:layout_marginTop="10dp"
-                    android:text="x"/>
-                <View
+    <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            >
+
+            <android.support.v7.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="160dp"
+                android:layout_height="190dp"
+                android:layout_margin="10dp">
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/colorLightGreyLine"
-                    android:layout_margin="10dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
                     android:gravity="center"
-                    android:text="x"
-                    android:padding="5dp"
-                    android:textColor="@color/cardview_dark_background"
-                    />
+                    >
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/circulobackground3"
+                        android:src="@drawable/ic_baseline_schedule_24"
+                        android:padding="10dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:text="x"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorLightGreyLine"
+                        android:layout_margin="10dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="x"
+                        android:padding="5dp"
+                        android:textColor="@color/cardview_dark_background"
+                        />
 
-            </LinearLayout>
+                </LinearLayout>
 
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
-            android:foreground="?android:attr/selectableItemBackground"
-            android:clickable="true"
-            android:layout_width="160dp"
-            android:layout_height="190dp"
-            android:layout_margin="10dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center"
-                >
-                <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:background="@drawable/circulobackground3"
-                    android:src="@drawable/ic_baseline_calendar_today_24"
-                    android:padding="10dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:layout_marginTop="10dp"
-                    android:text="x"/>
-                <View
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="160dp"
+                android:layout_height="190dp"
+                android:layout_margin="10dp">
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/colorLightGreyLine"
-                    android:layout_margin="10dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
                     android:gravity="center"
-                    android:text="x"
-                    android:padding="5dp"
-                    android:textColor="@color/cardview_dark_background"
-                    />
+                    >
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/circulobackground3"
+                        android:src="@drawable/ic_baseline_calendar_today_24"
+                        android:padding="10dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:text="x"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorLightGreyLine"
+                        android:layout_margin="10dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="x"
+                        android:padding="5dp"
+                        android:textColor="@color/cardview_dark_background"
+                        />
 
-            </LinearLayout>
+                </LinearLayout>
 
-        </android.support.v7.widget.CardView>
-    </LinearLayout>
-    -->
-
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -203,7 +203,7 @@
             android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
             android:layout_width="340dp"
-            android:layout_height="170dp"
+            android:layout_height="180dp"
             android:layout_margin="10dp">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -215,14 +215,14 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circulobackground3"
-                    android:src="@drawable/ic_baseline_add_circle_outline_24"
+                    android:src="@drawable/ic_baseline_cancel_presentation_24"
                     android:padding="10dp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:layout_marginTop="10dp"
-                    android:text="Reserva rápida"/>
+                    android:text="Cierre de laboratorio"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -232,7 +232,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Ingresa tu entrada al instante"
+                    android:text="En caso de ausentarse y/o rechazar nuevas solicitudes por una causa mayor"
                     android:padding="5dp"
                     android:textColor="@color/cardview_dark_background"
                     />
