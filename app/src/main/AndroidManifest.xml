@@ -9,18 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Prototipo2tt">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".login" />
-        <activity android:name=".registrar_alumno" />
-        <activity android:name=".alumno_home" />
-        <activity android:name=".login_profesor" />
-        <activity android:name=".profesor_home" />
+        <activity android:name=".login" android:screenOrientation="portrait"/>
+        <activity android:name=".registrar_alumno" android:screenOrientation="portrait"/>
+        <activity android:name=".alumno_home" android:screenOrientation="portrait"/>
+        <activity android:name=".login_profesor" android:screenOrientation="portrait"/>
+        <activity android:name=".profesor_home" android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
