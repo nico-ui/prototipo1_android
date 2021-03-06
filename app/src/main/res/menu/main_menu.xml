@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/id_menuhorario"
+            android:icon="@drawable/ic_baseline_schedule_24"
+            android:title="Horarios" />
+        <item
+            android:id="@+id/id_menuagendar"
+            android:icon="@drawable/ic_baseline_calendar_today_24"
+            android:title="Agendar" />
+        <item
+            android:id="@+id/id_menureserva"
+            android:icon="@drawable/ic_baseline_add_circle_outline_24"
+            android:title="Reserva rápida" />
+
+        <item
+            android:id="@+id/id_menumisreservas"
+            android:icon="@drawable/ic_baseline_library_add_check_24"
+            android:title="Mis reservaciones" />
+    </group>
+    <item android:title="PERFIL">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/id_menulogin"
+                    android:icon="@drawable/ic_baseline_login_24"
+                    android:title="Ingresar" />
+                <item
+                    android:id="@+id/id_menulogout"
+                    android:icon="@drawable/ic_baseline_logout_24"
+                    android:title="Salir" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="CONTACTANOS">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/id_menufooter"
+                    android:icon="@drawable/ic_baseline_contact_support_24"
+                    android:title="Contacto" />
+            </group>
+        </menu>
+    </item>
+</menu>

@@ -4,10 +4,9 @@
     android:shape="rectangle"
     >
     <gradient
-        android:startColor="@color/colorPrimaryLight"
-        android:centerColor="#fff"
-        android:endColor="@color/colorPrimaryLight"
-        android:angle="45"
+        android:startColor="#fff"
+        android:centerColor="@color/colorPrimaryExtraLight"
+        android:endColor="#fff"
         android:type="sweep"
         />
 </shape>

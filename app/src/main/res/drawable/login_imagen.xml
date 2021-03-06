@@ -13,7 +13,7 @@
         />
     <size
         android:height="60dp"
-        android:width="60dp"
+        android:width="125dp"
         />
     <corners
         android:bottomLeftRadius="999dp"

@@ -1,11 +1,12 @@
 package com.example.prototipo2tt;
 
-import android.app.Activity;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -37,9 +38,10 @@ import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 
-public class registrar_alumno extends Activity {
+public class registrar_alumno extends AppCompatActivity {
     Button jbn1;
     EditText jet1, jet2, jet3, jet4, jet5, jet6;
+    Toolbar toolb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +54,8 @@ public class registrar_alumno extends Activity {
         jet4 = (EditText) findViewById(R.id.editTextTextEmailAddress);
         jet5 = (EditText) findViewById(R.id.editTextNumber2);
         jet6 = (EditText) findViewById(R.id.editTextTextPassword3);
+        toolb = (Toolbar) findViewById(R.id.toolbarregistraralumno);
+        setSupportActionBar(toolb);
 
     }
 

@@ -21,6 +21,10 @@
         <activity android:name=".alumno_home" android:screenOrientation="portrait"/>
         <activity android:name=".login_profesor" android:screenOrientation="portrait"/>
         <activity android:name=".profesor_home" android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
