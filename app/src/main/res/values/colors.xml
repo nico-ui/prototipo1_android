@@ -4,10 +4,17 @@
     <color name="colorPrimaryDark">#0070c9</color>
     <color name="colorPrimaryLight">#68cfff</color>
 
-
     <color name="colorLightGreyLine">#efefef</color>
-    <color name="colorPrimaryExtraLight">#a0ffff</color>
 
+
+    <color name="colorPrimaryExtraLight">#a0ffff</color>
+    <color name="colorPrimaryExtraLightDark">#6ccccc</color>
+    <color name="colorPrimaryExtraLightLight">#d4ffff</color>
+
+
+    <color name="colorPrimaryProfesor">#1e425c</color>
+    <color name="colorPrimaryDarkProfesor">#001c32</color>
+    <color name="colorPrimaryLightProfesor">#4c6d89</color>
 
 
 </resources>
