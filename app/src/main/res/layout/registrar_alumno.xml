@@ -36,7 +36,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="cursive"
-                android:text="Bienvenido"
+                android:text="Crear cuenta"
                 android:textColor="@color/colorPrimary"
                 android:textSize="40dp"
                 android:textStyle="bold"
@@ -50,13 +50,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
                 android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
                 android:layout_marginBottom="8dp"
                 android:backgroundTint="@color/colorPrimary"
                 android:ems="10"
                 android:hint="Apellido Paterno"
                 android:inputType="textPersonName"
-                android:maxLength="30"
+                android:maxLength="45"
                 android:textColor="@color/colorPrimaryDark"
                 app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName5"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -78,15 +80,16 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
-
-                app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+                app:layout_constraintTop_toBottomOf="@+id/idconfirmarcontrasena" />
 
             <EditText
                 android:id="@+id/editTextTextPersonName3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
                 android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
                 android:layout_marginBottom="8dp"
                 android:backgroundTint="@color/colorPrimary"
                 android:ems="10"
@@ -104,16 +107,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:layout_marginEnd="32dp"
+                android:layout_marginBottom="8dp"
                 android:backgroundTint="@color/colorPrimary"
                 android:ems="10"
                 android:hint="Apellido Materno"
                 android:inputType="textPersonName"
-                android:maxLength="30"
+                android:maxLength="45"
                 android:textColor="@color/colorPrimaryDark"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintStart_toStartOf="parent" />
 
             <EditText
                 android:id="@+id/editTextNumber2"
@@ -154,11 +157,28 @@
                 />
 
             <EditText
+                android:id="@+id/idconfirmarcontrasena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="Confirmar contraseña"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:textColor="@color/colorPrimaryDark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword3" />
+
+            <EditText
                 android:id="@+id/editTextTextEmailAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
-                android:layout_marginTop="8dp"
                 android:layout_marginEnd="32dp"
                 android:backgroundTint="@color/colorPrimary"
                 android:ems="10"
@@ -166,10 +186,11 @@
                 android:inputType="textEmailAddress"
                 android:maxLength="60"
                 android:textColor="@color/colorPrimaryDark"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+                app:layout_constraintTop_toTopOf="parent" />
 
 
         </android.support.constraint.ConstraintLayout>
