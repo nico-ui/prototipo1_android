@@ -10,14 +10,13 @@
             android:icon="@drawable/ic_baseline_calendar_today_24"
             android:title="Agendar" />
         <item
-            android:id="@+id/id_menureserva"
-            android:icon="@drawable/ic_baseline_add_circle_outline_24"
-            android:title="Reserva rápida" />
-
-        <item
             android:id="@+id/id_menumisreservas"
             android:icon="@drawable/ic_baseline_library_add_check_24"
             android:title="Mis reservaciones" />
+        <item
+            android:id="@+id/id_menureserva"
+            android:icon="@drawable/ic_baseline_add_circle_outline_24"
+            android:title="Reserva rápida" />
     </group>
     <item android:title="PERFIL">
         <menu>
