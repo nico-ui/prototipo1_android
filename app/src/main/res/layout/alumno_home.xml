@@ -8,8 +8,7 @@
     android:fitsSystemWindows="true"
     android:orientation="vertical"
     tools:context=".alumno_home"
-    tools:openDrawer="start"
-    >
+    tools:openDrawer="start">
 
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
@@ -18,8 +17,7 @@
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/header"
-        app:menu="@menu/main_menu"
-        />
+        app:menu="@menu/main_menu" />
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
@@ -32,14 +30,13 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
+            android:elevation="4dp"
             android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:elevation="4dp"
-            android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            />
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"

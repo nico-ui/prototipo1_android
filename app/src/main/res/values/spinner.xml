@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="combo_especialidad">
+        <item>ING. EN SISTEMAS COMPUTACIONALES</item>
+        <item>ING. EN INTELIGENCIA ARTIFICIAL</item>
+        <item>LIC. EN CIENCIA DE DATOS</item>
+        <item>ING. EN SISTEMAS AUTOMOTICES</item>
+        <item>M. EN C. EN SISTEMAS COMPUTACIONALES MÓVILES</item>
+    </string-array>
+</resources>

@@ -26,175 +26,205 @@
             app:layout_constraintTop_toTopOf="parent"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
-        <android.support.constraint.ConstraintLayout
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            >
 
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="cursive"
-                android:text="Crear cuenta"
-                android:textColor="@color/colorPrimary"
-                android:textSize="40dp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName4"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <EditText
-                android:id="@+id/editTextTextPersonName4"
+            <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginLeft="32dp"
-                android:layout_marginEnd="32dp"
-                android:layout_marginRight="32dp"
-                android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/colorPrimary"
-                android:ems="10"
-                android:hint="Apellido Paterno"
-                android:inputType="textPersonName"
-                android:maxLength="45"
-                android:textColor="@color/colorPrimaryDark"
-                app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName5"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                android:layout_height="match_parent"
+                >
 
-            <Button
-                android:id="@+id/button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginEnd="32dp"
-                android:background="@drawable/custom_button_login"
-                android:onClick="registrar"
-                android:text="REGISTRAR"
-                android:textColor="#FFFFFF"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:fontFamily="cursive"
+                    android:text="Crear Cuenta"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="40dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/idboleta"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
 
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/idconfirmarcontrasena" />
+                <EditText
+                    android:id="@+id/idprimerApe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:ems="10"
+                    android:hint="Primer apellido"
+                    android:inputType="textPersonName"
+                    android:maxLength="45"
+                    android:textColor="@color/colorPrimaryDark"
+                    app:layout_constraintBottom_toTopOf="@+id/idsegundoApe"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
 
-            <EditText
-                android:id="@+id/editTextTextPersonName3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginLeft="32dp"
-                android:layout_marginEnd="32dp"
-                android:layout_marginRight="32dp"
-                android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/colorPrimary"
-                android:ems="10"
-                android:hint="Nombres(s)"
-                android:inputType="textPersonName"
-                android:maxLength="45"
-                android:textColor="@color/colorPrimaryDark"
-                app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName4"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                <Button
+                    android:id="@+id/idbtnRegistrar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="29dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/custom_button_login"
+                    android:onClick="registrar"
 
-            <EditText
-                android:id="@+id/editTextTextPersonName5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginEnd="32dp"
-                android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/colorPrimary"
-                android:ems="10"
-                android:hint="Apellido Materno"
-                android:inputType="textPersonName"
-                android:maxLength="45"
-                android:textColor="@color/colorPrimaryDark"
-                app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                    android:text="REGISTRAR"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/idconfirmarcontra" />
 
-            <EditText
-                android:id="@+id/editTextNumber2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="32dp"
-                android:backgroundTint="@color/colorPrimary"
-                android:ems="10"
-                android:hint="Boleta"
-                android:inputType="number"
-                android:maxLength="10"
-                android:textColor="@color/colorPrimaryDark"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+                <EditText
+                    android:id="@+id/idnombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:ems="10"
+                    android:hint="Nombre(s)"
+                    android:inputType="textPersonName"
+                    android:maxLength="45"
+                    android:textColor="@color/colorPrimaryDark"
+                    app:layout_constraintBottom_toTopOf="@+id/idprimerApe"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
 
-            <EditText
-                android:id="@+id/editTextTextPassword3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="32dp"
-                android:backgroundTint="@color/colorPrimary"
-                android:ems="10"
-                android:hint="Contraseña"
-                android:inputType="textPassword"
-                android:maxLength="20"
-                android:textColor="@color/colorPrimaryDark"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextNumber2"
+                <EditText
+                    android:id="@+id/idsegundoApe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:ems="10"
+                    android:hint="Segundo apellido"
+                    android:inputType="textPersonName"
+                    android:maxLength="45"
+                    android:textColor="@color/colorPrimaryDark"
+                    app:layout_constraintBottom_toTopOf="@+id/idemail"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
 
-                />
+                <EditText
+                    android:id="@+id/idboleta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:ems="10"
+                    android:hint="Boleta/Pre boleta"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:textColor="@color/colorPrimaryDark"
+                    app:layout_constraintBottom_toTopOf="@+id/idnombre"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent" />
 
-            <EditText
-                android:id="@+id/idconfirmarcontrasena"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="32dp"
-                android:backgroundTint="@color/colorPrimary"
-                android:ems="10"
-                android:hint="Confirmar contraseña"
-                android:inputType="textPassword"
-                android:maxLength="20"
-                android:textColor="@color/colorPrimaryDark"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword3" />
+                <EditText
+                    android:id="@+id/idcontra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:ems="10"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:textColor="@color/colorPrimaryDark"
+                    app:layout_constraintEnd_toEndOf="parent"
 
-            <EditText
-                android:id="@+id/editTextTextEmailAddress"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginEnd="32dp"
-                android:backgroundTint="@color/colorPrimary"
-                android:ems="10"
-                android:hint="Email"
-                android:inputType="textEmailAddress"
-                android:maxLength="60"
-                android:textColor="@color/colorPrimaryDark"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/idspinner" />
 
+                <EditText
+                    android:id="@+id/idconfirmarcontra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="32dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:ems="10"
+                    android:hint="Confirmar contraseña"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:textColor="@color/colorPrimaryDark"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/idcontra" />
 
-        </android.support.constraint.ConstraintLayout>
+                <EditText
+                    android:id="@+id/idemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="60"
+                    android:textColor="@color/colorPrimaryDark"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.6" />
 
+                <Spinner
+                    android:id="@+id/idspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="32dp"
+                    android:outlineAmbientShadowColor="@color/colorPrimary"
+                    android:outlineSpotShadowColor="@color/colorPrimary"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Especialidad"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/idemail" />
+
+            </android.support.constraint.ConstraintLayout>
+        </ScrollView>
     </android.support.constraint.ConstraintLayout>
 
 </android.support.v4.widget.DrawerLayout>
