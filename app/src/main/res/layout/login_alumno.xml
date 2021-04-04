@@ -36,7 +36,7 @@
 
 
             <EditText
-                android:id="@+id/editTextTextPassword"
+                android:id="@+id/txtcontrasenaloginalumno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
@@ -97,7 +97,7 @@
                 android:textColor="@color/colorPrimary"
                 android:textSize="40dp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/editTextNumber"
+                app:layout_constraintBottom_toTopOf="@+id/txtboletaloginalumno"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -118,7 +118,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/editTextNumber"
+                android:id="@+id/txtboletaloginalumno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
@@ -131,7 +131,7 @@
                 android:maxLength="10"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="20sp"
-                app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+                app:layout_constraintBottom_toTopOf="@+id/txtcontrasenaloginalumno"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
