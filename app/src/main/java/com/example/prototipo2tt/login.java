@@ -35,6 +35,7 @@ public class login extends AppCompatActivity {
         toolb = (Toolbar) findViewById(R.id.toolbarloginalumno);
         setSupportActionBar(toolb);
 
+        //BOTÓN REGISTRAR
         jbtn_reg.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 itn = new Intent(login.this, registrar_alumno.class);
@@ -42,8 +43,10 @@ public class login extends AppCompatActivity {
             }
         });
 
+        //BOTÓN INGRESAR
         jbtn_ing.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                //OBLIGADO A TRABAJAR CON HILOS
                 Thread tr = new Thread() {
                     @Override
                     public void run() {
@@ -56,8 +59,10 @@ public class login extends AppCompatActivity {
                                     itn2 = new Intent(login.this, alumno_home.class);
                                     startActivity(itn2);
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "Usuario incorrecto",
+                                    Toast.makeText(getApplicationContext(), "Usuario incorrecto, intenta de nuevo",
                                             Toast.LENGTH_SHORT).show();
+                                    jet_bol.setText("");
+                                    jet_pas.setText("");
                                 }
                             }
                         });
