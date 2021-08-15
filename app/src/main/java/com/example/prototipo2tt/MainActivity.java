@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button jbtn_alu, jbtn_pro;
+    Button jbtn_alu, jbtn_pro, jbtn_invitado;
     Intent itn, itn2;
     Toolbar toolb;
 
@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         jbtn_alu = (Button) findViewById(R.id.xbtn_alumno);
         jbtn_pro = (Button) findViewById(R.id.button_profesor);
+        jbtn_invitado = (Button) findViewById(R.id.button_invitado);
+
         toolb = (Toolbar) findViewById(R.id.toolbarmain);
         setSupportActionBar(toolb);
 
@@ -35,5 +37,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        jbtn_invitado.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                itn2 = new Intent(MainActivity.this, invitado_home.class);
+                startActivity(itn2);
+            }
+        });
     }
 }

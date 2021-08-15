@@ -4,9 +4,9 @@
     android:shape="rectangle"
     >
     <gradient
-        android:startColor="#fff"
+        android:startColor="@color/colorPrimaryExtraLight"
         android:centerColor="@color/colorPrimaryExtraLight"
-        android:endColor="#fff"
+        android:endColor="@color/colorPrimaryExtraLight"
         android:type="sweep"
         />
 </shape>

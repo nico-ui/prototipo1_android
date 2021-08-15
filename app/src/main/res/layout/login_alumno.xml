@@ -13,18 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbarloginalumno"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
-            android:elevation="4dp"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        <include
+            layout="@layout/toolbar"/>
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -32,16 +22,16 @@
             android:gravity="center"
             android:orientation="vertical"
             tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="-88dp">
+            tools:layout_editor_absoluteY="-48dp">
 
 
             <EditText
-                android:id="@+id/txtcontrasenaloginalumno"
+                android:id="@+id/txt_contra_profesor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:layout_marginEnd="32dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="16dp"
                 android:backgroundTint="@color/colorPrimary"
                 android:ems="10"
                 android:hint="Contraseña"
@@ -57,14 +47,14 @@
                 />
 
             <Button
-                android:id="@+id/btn_ingresar"
+                android:id="@+id/btn_ingresar_profesor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="32dp"
                 android:background="@drawable/custom_button_login"
-                android:text="Ingresar"
+                android:text="Iniciar sesión"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -72,12 +62,13 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
+
             <Button
                 android:id="@+id/btn_registrar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="32dp"
                 android:background="@drawable/custom_button_registrar"
                 android:text="Registrar"
@@ -86,22 +77,20 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btn_ingresar" />
+                app:layout_constraintTop_toBottomOf="@+id/btn_ingresar_profesor" />
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="cursive"
-                android:text="¡Hola a todos!"
+                android:layout_marginBottom="24dp"
+                android:text="Ingresar"
                 android:textColor="@color/colorPrimary"
                 android:textSize="40dp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/txtboletaloginalumno"
+                app:layout_constraintBottom_toTopOf="@+id/txt_clave_profesor"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.69" />
+                app:layout_constraintStart_toStartOf="parent" />
 
             <CheckBox
                 android:id="@+id/checkBox"
@@ -118,12 +107,12 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/txtboletaloginalumno"
+                android:id="@+id/txt_clave_profesor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:layout_marginEnd="32dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="16dp"
                 android:backgroundTint="@color/colorPrimary"
                 android:ems="10"
                 android:hint="Boleta"
@@ -131,7 +120,7 @@
                 android:maxLength="10"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="20sp"
-                app:layout_constraintBottom_toTopOf="@+id/txtcontrasenaloginalumno"
+                app:layout_constraintBottom_toTopOf="@+id/txt_contra_profesor"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
@@ -139,14 +128,13 @@
                 android:id="@+id/button2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
                 android:background="@drawable/custom_button_olvidecontrasena"
-                android:text="¿Olvide mi contraseña?"
+                android:text="Olvidé mi contraseña"
                 android:textColor="@color/colorPrimaryDark"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btn_registrar"
-                />
+                app:layout_constraintTop_toBottomOf="@+id/btn_registrar" />
 
 
         </android.support.constraint.ConstraintLayout>

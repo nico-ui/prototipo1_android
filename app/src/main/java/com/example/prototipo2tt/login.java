@@ -7,7 +7,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import org.json.JSONArray;
 
@@ -28,11 +27,11 @@ public class login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_alumno);
         jbtn_reg = (Button) findViewById(R.id.btn_registrar);
-        jbtn_ing = (Button) findViewById(R.id.btn_ingresar);
-        jet_bol = (EditText) findViewById(R.id.txtboletaloginalumno);
-        jet_pas = (EditText) findViewById(R.id.txtcontrasenaloginalumno);
+        jbtn_ing = (Button) findViewById(R.id.btn_ingresar_profesor);
+        jet_bol = (EditText) findViewById(R.id.txt_clave_profesor);
+        jet_pas = (EditText) findViewById(R.id.txt_contra_profesor);
 
-        toolb = (Toolbar) findViewById(R.id.toolbarloginalumno);
+        toolb = (Toolbar) findViewById(R.id.toolbarmain);
         setSupportActionBar(toolb);
 
         //BOTÓN REGISTRAR
@@ -45,6 +44,14 @@ public class login extends AppCompatActivity {
 
         //BOTÓN INGRESAR
         jbtn_ing.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                itn = new Intent(login.this, alumno_home.class);
+                startActivity(itn);
+            }
+        });
+
+        //BOTÓN INGRESAR
+        /*jbtn_ing.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 //OBLIGADO A TRABAJAR CON HILOS
                 Thread tr = new Thread() {
@@ -70,7 +77,7 @@ public class login extends AppCompatActivity {
                 };
                 tr.start();
             }
-        });
+        });*/
     }
 
     public String enviarPost(String bol, String pas) {//consumir datos

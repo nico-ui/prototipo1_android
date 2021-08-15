@@ -17,10 +17,9 @@ public class login_profesor extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_profesor);
-        jbnporfesoringresar = (Button) findViewById(R.id.xbnprofesoringresar);
-        toolb = (Toolbar) findViewById(R.id.toolbarloginprofesor);
+        jbnporfesoringresar = (Button) findViewById(R.id.btn_ingresar_profesor);
+        toolb = (Toolbar) findViewById(R.id.toolbarmain);
         setSupportActionBar(toolb);
-
 
         jbnporfesoringresar.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){

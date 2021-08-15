@@ -6,125 +6,99 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
-    tools:context=".login_profesor"
-    tools:openDrawer="start">
+    tools:context=".login"
+    tools:openDrawer="start"
+    >
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        >
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbarloginprofesor"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
-            android:elevation="4dp"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        <include
+            layout="@layout/toolbar"/>
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/colorPrimaryDarkProfesor"
             android:gravity="center"
             android:orientation="vertical"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="-259dp">
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="-326dp">
+
 
             <EditText
-                android:id="@+id/xetcontraseñaprofesor"
+                android:id="@+id/txt_contra_profesor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
-                android:layout_marginLeft="32dp"
                 android:layout_marginEnd="32dp"
-                android:layout_marginRight="32dp"
-                android:backgroundTint="@color/colorPrimaryExtraLightDark"
+                android:layout_marginBottom="48dp"
+                android:backgroundTint="@color/colorPrimary"
                 android:ems="10"
                 android:hint="Contraseña"
                 android:inputType="textPassword"
                 android:maxLength="15"
-                android:textColor="@color/colorPrimaryExtraLight"
-                android:textColorHint="@color/colorPrimaryExtraLightDark"
+                android:textColor="@color/colorPrimaryDark"
                 android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/btn_ingresar_profesor"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
 
-            <EditText
-                android:id="@+id/xetclaveprofesor"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginEnd="32dp"
-                android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/colorPrimaryExtraLightDark"
-                android:ems="10"
-                android:hint="Clave"
-                android:inputType="number"
-                android:maxLength="10"
-                android:textColor="@color/colorPrimaryExtraLight"
-                android:textColorHint="@color/colorPrimaryExtraLightDark"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toTopOf="@+id/xetcontraseñaprofesor"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent" />
 
-            <TextView
-                android:id="@+id/xtvloginprofesor"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="100dp"
-                android:fontFamily="cursive"
-                android:text="Inicio de sesión"
-                android:textColor="@color/colorPrimaryExtraLight"
-                android:textSize="40dp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/xetclaveprofesor"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
             <Button
-                android:id="@+id/xbnprofesoringresar"
+                android:id="@+id/btn_ingresar_profesor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:layout_marginEnd="32dp"
                 android:background="@drawable/custom_button_login"
-                android:text="Ingresar"
+                android:text="Iniciar sesión"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/xetcontraseñaprofesor" />
+                app:layout_constraintTop_toTopOf="parent"
+                />
 
-            <CheckBox
-                android:id="@+id/xcbrecordarprofesor"
+
+            <TextView
+                android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="32dp"
-                android:layout_marginRight="32dp"
-                android:text="Recordar usuario"
-                android:buttonTint="@color/colorPrimaryExtraLightLight"
-                android:textColor="@color/colorPrimaryExtraLight"
-                android:textSize="18sp"
+                android:layout_marginBottom="24dp"
+                android:text="Ingresar"
+                android:textColor="@color/colorPrimary"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/txt_clave_profesor"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/xetcontraseñaprofesor" />
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/txt_clave_profesor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="Clave"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/txt_contra_profesor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
 
         </android.support.constraint.ConstraintLayout>
 
-
     </android.support.constraint.ConstraintLayout>
 
-
 </android.support.v4.widget.DrawerLayout>
-
