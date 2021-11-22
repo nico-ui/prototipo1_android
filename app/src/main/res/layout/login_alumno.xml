@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
-    tools:context=".login"
+    tools:context=".Activities.login"
     tools:openDrawer="start">
-
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
         <include
             layout="@layout/toolbar"/>
-
-        <android.support.constraint.ConstraintLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
@@ -24,15 +22,25 @@
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="-48dp">
 
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="179dp"
+                android:layout_height="124dp"
+                android:layout_marginTop="68dp"
+                android:src="@drawable/icon_alumno"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
 
             <EditText
-                android:id="@+id/txt_contra_profesor"
+                android:id="@+id/editTextPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:layout_marginEnd="32dp"
                 android:layout_marginBottom="16dp"
-                android:backgroundTint="@color/colorPrimary"
+                android:background="@drawable/forget"
                 android:ems="10"
                 android:hint="Contraseña"
                 android:inputType="textPassword"
@@ -45,39 +53,37 @@
                 app:layout_constraintStart_toStartOf="parent"
 
                 />
-
             <Button
-                android:id="@+id/btn_ingresar_profesor"
+                android:id="@+id/btnLoginAlumno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="36dp"
                 android:layout_marginEnd="32dp"
                 android:background="@drawable/custom_button_login"
                 android:text="Iniciar sesión"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
-
             <Button
-                android:id="@+id/btn_registrar"
+                android:id="@+id/btnRegisterAlumno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="32dp"
                 android:background="@drawable/custom_button_registrar"
                 android:text="Registrar"
                 android:textColor="#009EFD"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btn_ingresar_profesor" />
+                app:layout_constraintTop_toBottomOf="@+id/btnLoginAlumno" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -86,59 +92,63 @@
                 android:layout_marginBottom="24dp"
                 android:text="Ingresar"
                 android:textColor="@color/colorPrimary"
-                android:textSize="40dp"
+                android:textSize="35dp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/txt_clave_profesor"
+                app:layout_constraintBottom_toTopOf="@+id/editTextBoleta"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                app:layout_constraintVertical_bias="1.0" />
 
             <CheckBox
                 android:id="@+id/checkBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:layout_marginEnd="32dp"
-                android:layout_marginRight="32dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginRight="48dp"
                 android:text="Recordar usuario"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.589" />
 
             <EditText
-                android:id="@+id/txt_clave_profesor"
+                android:id="@+id/editTextBoleta"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:layout_marginEnd="32dp"
                 android:layout_marginBottom="16dp"
-                android:backgroundTint="@color/colorPrimary"
+                android:background="@drawable/forget"
                 android:ems="10"
                 android:hint="Boleta"
                 android:inputType="number"
                 android:maxLength="10"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="20sp"
-                app:layout_constraintBottom_toTopOf="@+id/txt_contra_profesor"
+                app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/btnForgetPassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="48dp"
+                android:layout_marginTop="40dp"
                 android:background="@drawable/custom_button_olvidecontrasena"
                 android:text="Olvidé mi contraseña"
                 android:textColor="@color/colorPrimaryDark"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btn_registrar" />
+                app:layout_constraintTop_toBottomOf="@+id/btnRegisterAlumno" />
 
 
-        </android.support.constraint.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-</android.support.v4.widget.DrawerLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

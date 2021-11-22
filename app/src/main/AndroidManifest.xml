@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".App.MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -12,9 +13,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Prototipo2tt"
         android:usesCleartextTraffic="true">
+        <activity android:name=".Activities.registrar_encargado"></activity>
         <activity
-            android:name=".MainActivity"
-            android:screenOrientation="portrait">
+            android:name=".Activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Splash.SplashActivity"
+            android:theme="@style/SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,23 +27,24 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".login"
+            android:name=".Activities.login"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".registrar_alumno"
+            android:name=".Activities.registrar_alumno"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".alumno_home"
+            android:name=".Activities.alumno_home"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".login_profesor"
+            android:name=".Activities.login_profesor"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".profesor_home"
+            android:name=".Activities.profesor_home"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".invitado_home"
+            android:name=".Activities.invitado_home"
             android:screenOrientation="portrait" />
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

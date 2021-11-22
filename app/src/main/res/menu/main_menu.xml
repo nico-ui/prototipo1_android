@@ -4,7 +4,7 @@
         <item
             android:id="@+id/id_menuhorario"
             android:icon="@drawable/ic_baseline_schedule_24"
-            android:title="Horarios" />
+            android:title="Ver Horarios" />
         <item
             android:id="@+id/id_menuagendar"
             android:icon="@drawable/ic_baseline_calendar_today_24"

@@ -7,4 +7,14 @@
         <item>ING. EN SISTEMAS AUTOMOTICES</item>
         <item>M. EN C. EN SISTEMAS COMPUTACIONALES MÓVILES</item>
     </string-array>
+    <string-array name="combo_laboratorios">
+        <item>LABORATORIO DE PROGRAMACIÓN 1</item>
+        <item>LABORATORIO DE PROGRAMACIÓN 2</item>
+        <item>LABORATORIO DE REDES</item>
+        <item>LABORATORIO DE SISTEMAS 1</item>
+        <item>LABORATORIO DE SISTEMAS 2</item>
+        <item>LABORATORIO DE SISTEMAS 3</item>
+        <item>LABORATORIO DE SISTEMAS 4</item>
+        <item>LABORATORIO DE SISTEMAS 5</item>
+    </string-array>
 </resources>

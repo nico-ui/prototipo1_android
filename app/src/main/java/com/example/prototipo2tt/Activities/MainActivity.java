@@ -1,14 +1,16 @@
-package com.example.prototipo2tt;
+package com.example.prototipo2tt.Activities;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.prototipo2tt.R;
+
 public class MainActivity extends AppCompatActivity {
-    Button jbtn_alu, jbtn_pro, jbtn_invitado;
+    Button btnAlumno, btnEncargado;
     Intent itn, itn2;
     Toolbar toolb;
 
@@ -16,32 +18,29 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        jbtn_alu = (Button) findViewById(R.id.xbtn_alumno);
-        jbtn_pro = (Button) findViewById(R.id.button_profesor);
-        jbtn_invitado = (Button) findViewById(R.id.button_invitado);
+        bindUI();
 
         toolb = (Toolbar) findViewById(R.id.toolbarmain);
         setSupportActionBar(toolb);
 
-        jbtn_alu.setOnClickListener(new View.OnClickListener(){
+        btnAlumno.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 itn = new Intent(MainActivity.this, login.class);
                 startActivity(itn);
             }
         });
 
-        jbtn_pro.setOnClickListener(new View.OnClickListener(){
+        btnEncargado.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 itn2 = new Intent(MainActivity.this, login_profesor.class);
                 startActivity(itn2);
             }
         });
 
-        jbtn_invitado.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                itn2 = new Intent(MainActivity.this, invitado_home.class);
-                startActivity(itn2);
-            }
-        });
+    }
+
+    private void bindUI(){
+        btnAlumno = (Button) findViewById(R.id.btnAlumno);
+        btnEncargado = (Button) findViewById(R.id.btnEncargado);
     }
 }

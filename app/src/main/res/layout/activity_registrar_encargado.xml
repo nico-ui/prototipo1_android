@@ -7,15 +7,14 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
-    tools:context=".Activities.registrar_alumno"
+    tools:context=".Activities.registrar_encargado"
     tools:openDrawer="start">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbarregistraralumno"
+            android:id="@+id/toolBarRegistrarEncargado"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
@@ -26,11 +25,9 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
-
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
+            android:layout_height="match_parent">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -42,16 +39,16 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="24dp"
                     android:fontFamily="cursive"
-                    android:text="Crear Cuenta Alumno"
+                    android:text="Crear Cuenta Encargado"
                     android:textColor="@color/colorPrimary"
                     android:textSize="40dp"
                     android:textStyle="bold"
-                    app:layout_constraintBottom_toTopOf="@+id/editTextNumBoleta"
+                    app:layout_constraintBottom_toTopOf="@+id/editTextNumeroEncargado"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
 
                 <EditText
-                    android:id="@+id/editTextFirstName"
+                    android:id="@+id/editTextFirstNameEncargado"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="32dp"
@@ -65,12 +62,12 @@
                     android:inputType="textPersonName"
                     android:maxLength="45"
                     android:textColor="@color/colorPrimaryDark"
-                    app:layout_constraintBottom_toTopOf="@+id/editTextSecondName"
+                    app:layout_constraintBottom_toTopOf="@+id/editTextSecondNameEncargado"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
 
                 <Button
-                    android:id="@+id/btnRegistrar"
+                    android:id="@+id/btnRegistrarEncargado"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="32dp"
@@ -84,10 +81,10 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.498"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextConfPassword" />
+                    app:layout_constraintTop_toBottomOf="@+id/editTextConfPassEncargado" />
 
                 <EditText
-                    android:id="@+id/editTextNombres"
+                    android:id="@+id/editTextNombresEncargado"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="32dp"
@@ -101,12 +98,12 @@
                     android:inputType="textPersonName"
                     android:maxLength="45"
                     android:textColor="@color/colorPrimaryDark"
-                    app:layout_constraintBottom_toTopOf="@+id/editTextFirstName"
+                    app:layout_constraintBottom_toTopOf="@+id/editTextFirstNameEncargado"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
 
                 <EditText
-                    android:id="@+id/editTextSecondName"
+                    android:id="@+id/editTextSecondNameEncargado"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="32dp"
@@ -118,12 +115,12 @@
                     android:inputType="textPersonName"
                     android:maxLength="45"
                     android:textColor="@color/colorPrimaryDark"
-                    app:layout_constraintBottom_toTopOf="@+id/editTextEmailAlumno"
+                    app:layout_constraintBottom_toTopOf="@+id/editTextEmailEncargado"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
 
                 <EditText
-                    android:id="@+id/editTextNumBoleta"
+                    android:id="@+id/editTextNumeroEncargado"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="32dp"
@@ -131,17 +128,17 @@
                     android:layout_marginBottom="8dp"
                     android:background="@drawable/forget"
                     android:ems="10"
-                    android:hint="Boleta/Pre boleta"
+                    android:hint="Numero de Empleado"
                     android:inputType="text"
                     android:maxLength="11"
                     android:textColor="@color/colorPrimaryDark"
-                    app:layout_constraintBottom_toTopOf="@+id/editTextNombres"
+                    app:layout_constraintBottom_toTopOf="@+id/editTextNombresEncargado"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent" />
 
                 <EditText
-                    android:id="@+id/editTextPass"
+                    android:id="@+id/editTextPassEncargado"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="32dp"
@@ -157,10 +154,10 @@
 
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/idspinner" />
+                    app:layout_constraintTop_toBottomOf="@+id/SpinnerLaboratorios" />
 
                 <EditText
-                    android:id="@+id/editTextConfPassword"
+                    android:id="@+id/editTextConfPassEncargado"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="32dp"
@@ -175,10 +172,10 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextPass" />
+                    app:layout_constraintTop_toBottomOf="@+id/editTextPassEncargado" />
 
                 <EditText
-                    android:id="@+id/editTextEmailAlumno"
+                    android:id="@+id/editTextEmailEncargado"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="32dp"
@@ -197,7 +194,7 @@
                     app:layout_constraintVertical_bias="0.6" />
 
                 <Spinner
-                    android:id="@+id/idspinner"
+                    android:id="@+id/SpinnerLaboratorios"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginStart="32dp"
@@ -218,13 +215,11 @@
                     android:layout_marginStart="32dp"
                     android:layout_marginLeft="32dp"
                     android:layout_marginTop="8dp"
-                    android:text="Especialidad"
+                    android:text="Laboratorios"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextEmailAlumno" />
-
+                    app:layout_constraintTop_toBottomOf="@+id/editTextEmailEncargado" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </ScrollView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.drawerlayout.widget.DrawerLayout>
-
