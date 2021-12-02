@@ -67,7 +67,7 @@ public class login_profesor extends AppCompatActivity {
     }
 
     private boolean isValidNumEncargado(String numEmpleado){
-        if (numEmpleado.length() > 0 && numEmpleado.length() >= 10){
+        if (numEmpleado.length() >= 4){
             return true;
         } else {
             return false;
